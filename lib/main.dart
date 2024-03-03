@@ -27,26 +27,26 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        body: Column(
+        body:ListView(
             //crossAxisAlignment: CrossAxisAlignment.end,
             //crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.start,
+           // mainAxisAlignment: MainAxisAlignment.start,
             children: [
               //1st container
               Container(
-                height: 300,
+                height: 200,
                 //width: 200,
                 color: Colors.deepPurpleAccent[400],
               ),
               //2nd container
               Container(
-                height: 300,
+                height: 200,
                 // width: 200,
                 color: Colors.deepPurpleAccent[200],
               ),
               //3rd container
               Container(
-                height: 300,
+                height: 400,
                 // width: 200,
                 color: Colors.deepPurpleAccent[100],
               )
