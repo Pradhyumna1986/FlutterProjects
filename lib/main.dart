@@ -27,11 +27,11 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        body: ListView(
+        body: Row(
             //crossAxisAlignment: CrossAxisAlignment.end,
             //crossAxisAlignment: CrossAxisAlignment.start,
             // mainAxisAlignment: MainAxisAlignment.start,
-            scrollDirection: Axis.horizontal,
+            //scrollDirection: Axis.horizontal,
             children: [
               //1st container
               Container(
