@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.deepPurple[100],
         appBar: AppBar(
-          title: const Text('AppBAr Demo'),
+          title: const Text('Day 03 Demo'),
           backgroundColor: Colors.deepPurple,
           elevation: 0,
           leading: const Icon(Icons.menu),
@@ -33,15 +33,11 @@ class MyApp extends StatelessWidget {
             height: 300,
             width: 300,
             // padding: const EdgeInsets.all(25),
-            padding: const EdgeInsets.only(left: 25, top: 25),
             decoration: BoxDecoration(
                 color: Colors.deepPurple,
                 borderRadius: BorderRadius.circular(30)),
-            child: const Text('MY First Text in FLUTTER',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold)),
+            padding: const EdgeInsets.all(25),
+            child: const Icon(Icons.face_rounded, color: Colors.white, size: 62),
           ),
         ),
       ),
