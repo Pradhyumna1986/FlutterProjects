@@ -27,28 +27,27 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        body: Row(
-            //crossAxisAlignment: CrossAxisAlignment.end,
+        body: Row(//crossAxisAlignment: CrossAxisAlignment.center,
             //crossAxisAlignment: CrossAxisAlignment.start,
-            // mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
             //scrollDirection: Axis.horizontal,
             children: [
               //1st container
               Container(
-                height: 200,
-                width: 200,
+                height: 50,
+                width: 50,
                 color: Colors.deepPurpleAccent[400],
               ),
               //2nd container
               Container(
-                height: 200,
-                width: 200,
+                height: 50,
+                width: 50,
                 color: Colors.deepPurpleAccent[200],
               ),
               //3rd container
               Container(
-                height: 400,
-                width: 200,
+                height: 50,
+                width: 50,
                 color: Colors.deepPurpleAccent[100],
               )
             ]),
