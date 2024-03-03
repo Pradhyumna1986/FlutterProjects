@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter first App',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.deepPurple[100],
+        //backgroundColor: Colors.deepPurple[100],
         appBar: AppBar(
           title: const Text('Day 04 Column'),
           backgroundColor: Colors.deepPurple,
@@ -27,26 +27,30 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        body: Column(children: [
-          //1st container
-          Container(
-            height: 200,
-            width: 200,
-            color: Colors.deepPurpleAccent[400],
-          ),
-          //2nd container
-          Container(
-            height: 200,
-            width: 200,
-            color: Colors.deepPurpleAccent[200],
-          ),
-          //3rd container
-          Container(
-            height: 200,
-            width: 200,
-            color: Colors.deepPurpleAccent[100],
-          )
-        ]),
+        body: Column(
+            //crossAxisAlignment: CrossAxisAlignment.end,
+            //crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              //1st container
+              Container(
+                height: 300,
+                //width: 200,
+                color: Colors.deepPurpleAccent[400],
+              ),
+              //2nd container
+              Container(
+                height: 300,
+                // width: 200,
+                color: Colors.deepPurpleAccent[200],
+              ),
+              //3rd container
+              Container(
+                height: 300,
+                // width: 200,
+                color: Colors.deepPurpleAccent[100],
+              )
+            ]),
       ),
     );
   }
