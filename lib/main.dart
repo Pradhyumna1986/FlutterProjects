@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.deepPurple[100],
         appBar: AppBar(
-          title: const Text('Day 03 Demo'),
+          title: const Text('Day 04 Column'),
           backgroundColor: Colors.deepPurple,
           elevation: 0,
           leading: const Icon(Icons.menu),
@@ -28,18 +27,26 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        body: Center(
-          child: Container(
-            height: 300,
-            width: 300,
-            // padding: const EdgeInsets.all(25),
-            decoration: BoxDecoration(
-                color: Colors.deepPurple,
-                borderRadius: BorderRadius.circular(30)),
-            padding: const EdgeInsets.all(25),
-            child: const Icon(Icons.face_rounded, color: Colors.white, size: 62),
+        body: Column(children: [
+          //1st container
+          Container(
+            height: 200,
+            width: 200,
+            color: Colors.deepPurpleAccent[400],
           ),
-        ),
+          //2nd container
+          Container(
+            height: 200,
+            width: 200,
+            color: Colors.deepPurpleAccent[200],
+          ),
+          //3rd container
+          Container(
+            height: 200,
+            width: 200,
+            color: Colors.deepPurpleAccent[100],
+          )
+        ]),
       ),
     );
   }
