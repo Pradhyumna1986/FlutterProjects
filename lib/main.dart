@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         //backgroundColor: Colors.deepPurple[100],
         appBar: AppBar(
-          title: const Text('Day 04 Column'),
+          title: const Text('Day 04  ListView.builder'),
           backgroundColor: Colors.deepPurple,
           elevation: 0,
           leading: const Icon(Icons.menu),
@@ -27,30 +27,13 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        body: Row(//crossAxisAlignment: CrossAxisAlignment.center,
-            //crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.center,
-            //scrollDirection: Axis.horizontal,
-            children: [
-              //1st container
-              Container(
-                height: 50,
-                width: 50,
-                color: Colors.deepPurpleAccent[400],
-              ),
-              //2nd container
-              Container(
-                height: 50,
-                width: 50,
-                color: Colors.deepPurpleAccent[200],
-              ),
-              //3rd container
-              Container(
-                height: 50,
-                width: 50,
-                color: Colors.deepPurpleAccent[100],
-              )
-            ]),
+        body: ListView.builder(
+          //EdgeInsetsGeometry:Padding( padding: 20)
+          itemCount: 20,
+          itemBuilder: (context, index) => ListTile(
+            title: Text(index.toString()),
+          ),
+        ),
       ),
     );
   }
