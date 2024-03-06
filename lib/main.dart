@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
+// ignore: must_be_immutable
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
+  MyApp({super.key});
+  List name = ['Somya', 'Gomya', 'Tomya'];
 // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -29,9 +30,9 @@ class MyApp extends StatelessWidget {
         ),
         body: ListView.builder(
           //EdgeInsetsGeometry:Padding( padding: 20)
-          itemCount: 20,
+          itemCount: name.length,
           itemBuilder: (context, index) => ListTile(
-            title: Text(index.toString()),
+            title: Text(name[index].toString()),
           ),
         ),
       ),
