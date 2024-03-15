@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         //backgroundColor: Colors.deepPurple[100],
         appBar: AppBar(
-          title: const Text('Day 04  GridView.builder'),
+          title: const Text('Day 05  GridView.builder'),
           backgroundColor: Colors.deepPurple,
           elevation: 0,
           leading: const Icon(Icons.menu),
