@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         //backgroundColor: Colors.deepPurple[100],
         appBar: AppBar(
-          title: const Text('Day 04  ListView.builder'),
+          title: const Text('Day 04  GridView.builder'),
           backgroundColor: Colors.deepPurple,
           elevation: 0,
           leading: const Icon(Icons.menu),
@@ -28,13 +29,14 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        body: ListView.builder(
-          //EdgeInsetsGeometry:Padding( padding: 20)
-          itemCount: name.length,
-          itemBuilder: (context, index) => ListTile(
-            title: Text(name[index].toString()),
-          ),
-        ),
+        body: GridView.builder(
+            itemCount: 64,
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 4),
+            itemBuilder: (context, index) => Container(
+                  color: Colors.deepOrangeAccent,
+                  margin: const EdgeInsets.all(5),
+                )),
       ),
     );
   }
