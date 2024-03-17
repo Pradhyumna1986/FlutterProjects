@@ -1,56 +1,23 @@
-// ignore_for_file: must_be_immutable
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Pages/first_page.dart';
+import 'package:flutter_application_1/Pages/second_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
-
-  // function methods
-  void logTapped() {
-    print('USer Tapped..!');
-  }
-  void logTappedDouble(){
-    print('USer DoubleTap..!');
-  }
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Day 07 Gesture Detector',
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Day 07 Gesture Detector'),
-          backgroundColor: Colors.deepPurple,
-          elevation: 0,
-          leading: const Icon(Icons.menu),
-          actions: [
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.logout),
-            ),
-          ],
-        ),
-        body: Center(
-            child: GestureDetector(
-          onTap: logTapped,
-          onDoubleTap:logTappedDouble ,
-          child: Container(
-            height: 200,
-            width: 200,
-            decoration: BoxDecoration(
-                border: Border.all(
-                  color: Colors.red,
-                ),
-                color: Colors.deepPurple[300],
-                borderRadius: const BorderRadius.all(Radius.circular(20))),
-            child: const Center(child: Text('Tab me and log..!')),
-          ),
-        )),
-      ),
+      debugShowCheckedModeBanner: true,
+      home: const FirstPage(),
+      routes: {
+        '/SecondPage1': (context) => const SecondPage(),
+        '/FirstPage': (context) => const FirstPage(),
+      },
     );
   }
 }
