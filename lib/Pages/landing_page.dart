@@ -43,7 +43,7 @@ class _LandingPageState extends State<LandingPage> {
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           //profile
           BottomNavigationBarItem(
-              icon: Icon(Icons.abc_sharp), label: 'profile'),
+              icon: Icon(Icons.person), label: 'profile'),
           //settings
           BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'settings')
         ],
